@@ -47,7 +47,7 @@ namespace WebAppEx1.Controllers
                     ModelState.AddModelError("", error.Description);
                 }
 
-                ModelState.AddModelError(string.Empty, "Invalid Credentials");
+                ModelState.AddModelError(string.Empty, "Invalid");
 
             }
             return View(model);

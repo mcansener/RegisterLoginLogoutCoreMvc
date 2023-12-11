@@ -47,7 +47,7 @@ namespace WebAppEx1.Controllers
                     ModelState.AddModelError("", error.Description);
                 }
 
-                ModelState.AddModelError(string.Empty, "Invalid Login Attempt");
+                ModelState.AddModelError(string.Empty, "Invalid Credentials");
 
             }
             return View(model);
@@ -73,7 +73,7 @@ namespace WebAppEx1.Controllers
                     return RedirectToAction("Index", "Home");
                 }
 
-                ModelState.AddModelError(string.Empty, "Invalid Login Attempt");
+                ModelState.AddModelError(string.Empty, "Invalid Credentials");
 
             }
             return View(user);

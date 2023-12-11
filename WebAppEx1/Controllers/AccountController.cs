@@ -66,7 +66,7 @@ namespace WebAppEx1.Controllers
         {
             if (ModelState.IsValid)
             {
-                var result = await _signInManager.PasswordSignInAsync(user.Email, user.Password, user.RememberMe, false);
+                var result = await _signInManager.PasswordSignInAsync(user.Email, user.Password, false, false);
 
                 if (result.Succeeded)
                 {
